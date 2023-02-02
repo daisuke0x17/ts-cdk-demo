@@ -1,5 +1,16 @@
-# Welcome to your CDK TypeScript project
+## Memo
+- `bin/cdk-{project}.ts`
+  - CDK アプリケーションへのエントリポイント
+  - これによって`lib/*`で定義したすべてのスタックがロード/作成される
+- `lib/cdk-{project}-stack.ts`
+  - メインの CDK アプリケーションスタックが定義
+  - リソースとそのプロパティはここに含める
+- `package.json`
+  - プロジェクトの依存関係、およびいくつかの追加情報とビルドスクリプト (npm build、npm test、npm watch) を定義
+- `cdk.json`
+  - アプリケーションの実行方法、および CDK とプロジェクトに関連する追加設定とパラメータをツールキットに指示
 
+# Welcome to your CDK TypeS
 This is a blank project for CDK development with TypeScript.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
